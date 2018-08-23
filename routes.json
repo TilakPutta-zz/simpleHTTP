@@ -1,0 +1,30 @@
+{
+    "/": {
+        "GET": {
+            "api": "./lib/root.js"
+        }
+    },
+    "/health": {
+        "GET": {
+            "api": "./lib/health.js"
+        }
+    },
+    "/job": {
+        "PUT": {
+            "api": "./lib/createJob.js"
+        }
+    },
+    "/job/<id>": {
+        "GET": {
+            "api": "./lib/getJob.js"
+        },
+        "DELETE": {
+            "api": "./lib/deleteJob.js"
+        }
+    },
+    "/job/<id>/<name>": {
+        "POST": {
+            "api": "./lib/updateJob.js"
+        }
+    }
+}
